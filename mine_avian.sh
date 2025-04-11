@@ -9,7 +9,7 @@ ALGO=minotaurx
 POOL=stratum+tcp://minotaurx.sea.mine.zpool.ca:7019
 
 # Wallet address to mine (AVN coin recomended)#
-WALLET=Fill_Your_AVN_Address_Here
+WALLET=RWg8MowuVoXmk8wwm7TjPrZnMyKKKuCTkZ
 
 # Pool Password (Optional) #
 PASS="c=AVN"
