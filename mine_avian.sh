@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 mine_avn() {
@@ -9,7 +8,7 @@ ALGO=minotaurx
 POOL=stratum+tcp://minotaurx.sea.mine.zpool.ca:7019
 
 # Wallet address to mine (AVN coin recomended)#
-WALLET=RWg8MowuVoXmk8wwm7TjPrZnMyKKKuCTkZ
+WALLET=Fill_Your_AVN_Address_Here
 
 # Pool Password (Optional) #
 PASS="c=AVN"
