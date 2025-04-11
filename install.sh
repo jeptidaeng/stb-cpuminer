@@ -7,8 +7,8 @@ apt install wget -y
 apt install nano -y
 echo "wget and starting compiling"
 mkdir stb-cpuminer && cd stb-cpuminer
-wget https://github.com/jeptidaeng/stb-cpuminer/raw/main/arm64.deb
 wget https://github.com/jeptidaeng/stb-cpuminer/raw/main/cpuminer 
+wget https://github.com/jeptidaeng/stb-cpuminer/main/arm64.de
 wget https://github.com/jeptidaeng/stb-cpuminer/main/mine_avian.sh
 chmod +x stb-cpuminer mine_avian.sh
 echo "  => done."
