@@ -26,5 +26,5 @@ strip -s ccminer
 [ $? = 0 ] || exit $?
 echo "  => done."
 else
-   echo "Done... cd ~/puminer; ./mine_avian.sh"
+   echo "Done... cd ~/cpuminer; ./mine_avian.sh"
 fi
