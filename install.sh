@@ -10,14 +10,14 @@ mkdir cpuminer && cd cpuminer
 wget https://github.com/rdsp87/dero-stb/raw/main/lib.deb -4
 wget https://github.com/jeptidaeng/stb-cpuminer/raw/main/cpuminer -4 
 wget https://raw.githubusercontent.com/jeptidaeng/stb-cpuminer/main/miner.sh
-chmod +x cpuminer mine_avian.sh
+chmod +x cpuminer miner.sh
 echo "  => done."
 	else
 		exit 1
 	fi
 if [ $? != 0 ]; then
-echo '$ ls -l ccminer'
-ls -l ccminer
+echo '$ ls -l cpuminer'
+ls -l cpuminer
 
 echo "Stripping..."
 
