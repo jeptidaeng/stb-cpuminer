@@ -88,8 +88,8 @@ Algorithms
  * ✓ __zr5__ (Ziftrcoin [ZRC])
 
 
-STB miner 2.7.4
+STB cpuminer 2.7.4
 ==========
-   <senter><img src="https://user-images.githubusercontent.com/68433096/105179946-89167000-5b5c-11eb-8d6d-c8c2df3d920f.jpg" width="358" height="487"></senter>
+           <senter><img src="https://user-images.githubusercontent.com/68433096/105179946-89167000-5b5c-11eb-8d6d-c8c2df3d920f.jpg" width="458" height="587"></senter>
 
 
