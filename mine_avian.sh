@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mine_avn() {
+mine_xna() {
 # Mining Algorithm
 ALGO=minotaurx
 
@@ -8,10 +8,10 @@ ALGO=minotaurx
 POOL=stratum+tcp://minotaurx.sea.mine.zpool.ca:7019
 
 # Wallet address to mine (AVN coin recomended)#
-WALLET=Fill_Your_AVN_Address_Here
+WALLET=RnVU6HeXBDhA3DFFBaNrcqZynusVFkToo
 
 # Pool Password (Optional) #
-PASS="c=AVN"
+PASS="c=XNA"
 
 # Mining thread to use #
 # To know how many your own cpu threads, #
@@ -23,4 +23,4 @@ THR=8
 clear
 ./cpuminer -a $ALGO -o $POOL -u $WALLET -p $PASS -t $THR
 }
-mine_avn
+mine_xna
