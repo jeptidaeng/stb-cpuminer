@@ -86,3 +86,10 @@ Algorithms
  * ✓ __yescryptR16__ (Goldcash [GOLD] Eli [ELI])
  * ✓ __yescryptR32__ (Documentchain [DMS])
  * ✓ __zr5__ (Ziftrcoin [ZRC])
+
+
+STB miner 2.7.4
+==========
+   <img src="https://user-images.githubusercontent.com/68433096/105179946-89167000-5b5c-11eb-8d6d-c8c2df3d920f.jpg" width="258" height="287">
+
+
