@@ -16,7 +16,7 @@ PASS="c=XNA"
 # Mining thread to use #
 # To know how many your own cpu threads, #
 # Type lscpu on the terminal #
-THR=8
+THR=4
 
 # Miner config[Do not edit if you not understand] #
 
