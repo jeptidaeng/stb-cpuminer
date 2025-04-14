@@ -90,6 +90,6 @@ Algorithms
 
 STB miner 2.7.4
 ==========
-   <img src="https://user-images.githubusercontent.com/68433096/105179946-89167000-5b5c-11eb-8d6d-c8c2df3d920f.jpg" width="258" height="287">
+   <senter><img src="https://user-images.githubusercontent.com/68433096/105179946-89167000-5b5c-11eb-8d6d-c8c2df3d920f.jpg" width="358" height="487"></senter>
 
 
