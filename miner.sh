@@ -8,7 +8,7 @@ ALGO=minotaurx
 POOL=stratum+tcp://minotaurx.sea.mine.zpool.ca:7019
 
 # Wallet address to mine (XNA coin recomended)#
-WALLET=RnVU6HeXBDhA3DFFBaNrcqZynusVFkToo
+WALLET=NRnVU6HeXBDhA3DFFBaNrcqZynusVFkToo
 
 # Pool Password (Optional) #
 PASS="c=XNA"
