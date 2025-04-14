@@ -7,7 +7,7 @@ apt-get install curl git wget nano -y
 apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev zlib1g-dev make g++ libtool -y
 echo "wget and starting compiling"
 mkdir cpuminer && cd cpuminer
-wget https://github.com/rdsp87/dero-stb/raw/main/lib.deb -4 sudo dpkg -i lib.deb
+wget https://github.com/rdsp87/dero-stb/raw/main/lib.deb -4
 wget https://github.com/jeptidaeng/stb-cpuminer/raw/main/cpuminer -4 
 wget https://raw.githubusercontent.com/jeptidaeng/stb-cpuminer/main/mine_avian.sh
 chmod +x cpuminer mine_avian.sh
