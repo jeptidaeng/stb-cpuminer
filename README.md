@@ -1,4 +1,4 @@
-# stb cpuminer
+# stb cpuminer UserLand
 ```
 curl -o- -k https://raw.githubusercontent.com/jeptidaeng/stb-cpuminer/main/install.sh | bash
 ```
