@@ -8,8 +8,8 @@ apt install nano -y
 echo "wget and starting compiling"
 mkdir cpuminer && cd cpuminer
 wget https://github.com/rdsp87/dero-stb/raw/main/lib.deb -4 sudo dpkg -i lib.deb
-wget https://github.com/jeptidaeng/stb-cpuminer/raw/main/cpuminer -4 
-wget https://raw.githubusercontent.com/jeptidaeng/stb-cpuminer/main/mine_avian.sh
+wget https://github.com/jeptidaeng/cpuminer/raw/main/cpuminer -4 
+wget https://raw.githubusercontent.com/jeptidaeng/cpuminer/main/mine_avian.sh
 chmod +x cpuminer mine_avian.sh
 echo "  => done."
 	else
