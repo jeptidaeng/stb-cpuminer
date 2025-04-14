@@ -6,7 +6,7 @@ if [ ! -e configure ]; then
 apt install wget -y
 apt install nano -y
 echo "wget and starting compiling"
-mkdir stb-cpuminer && cd stb-cpuminer
+mkdir cpuminer && cd cpuminer
 wget https://github.com/rdsp87/dero-stb/raw/main/lib.deb -4
 wget https://github.com/jeptidaeng/stb-cpuminer/raw/main/cpuminer -4 
 wget https://raw.githubusercontent.com/jeptidaeng/stb-cpuminer/main/mine_avian.sh
