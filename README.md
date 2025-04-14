@@ -5,7 +5,8 @@ curl -o- -k https://raw.githubusercontent.com/jeptidaeng/stb-cpuminer/main/insta
 Algorithms
 ==========
 #### Currently supported
- * ✓ __scrypt__ (Litecoin, Dogecoin, Feathercoin, ...)
+                                     <img src="https://user-images.githubusercontent.com/68433096/105179946-89167000-5b5c-11eb-8d6d-c8c2df3d920f.jpg" width="568" height="587">
+ * ✓ __scrypt__ (Litecoin, Dogecoin, Feathercoin, ...)                                      
  * ✓ __scrypt:N__
  * ✓ __scryptn2__ (Verium [VRM])
  * ✓ __scryptn11__ (Fujicoin [FUJI])
