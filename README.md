@@ -7,8 +7,8 @@ Now Root
 
 Root
 ==========
-yes | apt update
-yes | apt upgrade
+* yes | apt update
+* yes | apt upgrade
 
 ```
 curl -o- -k https://raw.githubusercontent.com/jeptidaeng/stb-cpuminer/main/install.sh | bash
