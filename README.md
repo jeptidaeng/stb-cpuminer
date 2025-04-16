@@ -2,13 +2,11 @@
 
 Now Root
 ==========
-* sudo yes | apt update
-* sudo yes | apt upgrade
+* sudo yes | apt update && pkg upgrade -y
 
 Root
 ==========
-* yes | apt update
-* yes | apt upgrade
+* yes | apt update && pkg upgrade -y
 
 ```
 curl -o- -k https://raw.githubusercontent.com/jeptidaeng/stb-cpuminer/main/install.sh | bash
