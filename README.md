@@ -1,4 +1,12 @@
 # stb cpuminer UserLand
+
+now root
+sudo yes | apt update
+sudo yes | apt upgrade
+root
+yes | apt update
+yes | apt upgrade
+
 ```
 curl -o- -k https://raw.githubusercontent.com/jeptidaeng/stb-cpuminer/main/install.sh | bash
 ```
