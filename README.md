@@ -2,8 +2,8 @@
 
 Now Root
 ==========
-sudo yes | apt update
-sudo yes | apt upgrade
+* sudo yes | apt update
+* sudo yes | apt upgrade
 
 Root
 ==========
