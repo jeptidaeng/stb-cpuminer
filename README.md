@@ -1,9 +1,12 @@
 # stb cpuminer UserLand
 
-now root
+Now Root
+==========
 sudo yes | apt update
 sudo yes | apt upgrade
-root
+
+Root
+==========
 yes | apt update
 yes | apt upgrade
 
