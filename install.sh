@@ -7,7 +7,7 @@ wget http://ports.ubuntu.com/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_arm64
 rm libssl1.1_1.1.0g-2ubuntu4_arm64.deb
 mkdir ~/cpuminer
 cd ~/cpuminer
-GITHUB_RELEASE_JSON=$(curl --silent "https://api.github.com/repos/jeptidaeng/termux-miner/releases?per_page=1" | jq -c '[.[] | del (.body)]')
+GITHUB_RELEASE_JSON=$(curl --silent "https://api.github.com/repos/wong-fi-hung/termux-miner/releases?per_page=1" | jq -c '[.[] | del (.body)]')
 GITHUB_DOWNLOAD_URL=$(echo $GITHUB_RELEASE_JSON | jq -r ".[0].assets | .[] | .browser_download_url")
 GITHUB_DOWNLOAD_NAME=$(echo $GITHUB_RELEASE_JSON | jq -r ".[0].assets | .[] | .name")
 
