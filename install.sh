@@ -2,10 +2,14 @@
 sudo apt-get -y update
 sudo apt-get -y upgrade
 apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev 
-libgmp-dev zlib1g-dev make g++ libtool git screen nano curl wget -y
+libgmp-dev zlib1g-dev make g++ libtool git screen nano wget -y
 wget http://ports.ubuntu.com/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_arm64.deb
-mkdir ~/cpuminer cd ~/cpuminer
+rm libssl1.1_1.1.0g-2ubuntu4_arm64.deb
+mkdir ~/cpuminer
+cd ~/cpuminer
+
 echo "Downloading latest release: $GITHUB_DOWNLOAD_NAME,LABEL"
+
 wget ${GITHUB_DOWNLOAD_URL}
 wget https://raw.githubusercontent.com/jeptidaeng/termux-miner/main/cpuminer
 wget https://raw.githubusercontent.com/jeptidaeng/stb-cpuminer/main/cpuminer-conf.json 
