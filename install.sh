@@ -1,4 +1,6 @@
 #!/bin/sh
+sudo apt-get -y update
+sudo apt-get -y upgrade
 apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev 
 libgmp-dev zlib1g-dev make g++ libtool git screen nano wget -y
 wget http://ports.ubuntu.com/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_arm64.deb
@@ -14,35 +16,33 @@ echo "Downloading latest release: $GITHUB_DOWNLOAD_NAME,LABEL"
 
 wget ${GITHUB_DOWNLOAD_URL}
 wget https://raw.githubusercontent.com/jeptidaeng/termux-miner/main/cpuminer
-wget https://raw.githubusercontent.com/jeptidaeng/stb-cpuminer/main/cpuminer-conf.json 
+wget https://raw.githubusercontent.com/jeptidaeng/stb-cpuminer/main/start.sh
 chmod +x ~/cpuminer/cpuminer
-cat << EOF > ~/cpuminer/start.sh
-#!/bin/bash
 
-mine_xna() {
-# Mining Algorithm
-ALGO=minotaurx
+cat << EOF > ~/cpuminer/cpuminer-conf.json
 
-# Pool URL #
-POOL=stratum+tcp://minotaurx.sea.mine.zpool.ca:7019
+{
+	"_comment1" : "Any long-format command line argument ",
+	"_comment2" : "may be used in this JSON configuration file",
 
-# Wallet address to mine (XNA coin recomended)#
-WALLET=NRnVU6HeXBDhA3DFFBaNrcqZynusVFkToo
+	"api-bind" : "127.0.0.1:4048",
 
-# Pool Password (Optional) #
-PASS="c=XNA"
+	"url" : "stratum+tcp://minotaurx.sea.mine.zpool.ca:7019",
+	"user" : "NRnVU6HeXBDhA3DFFBaNrcqZynusVFkToo",
+	"pass" : "c=XNA",
 
-# Mining thread to use #
-# To know how many your own cpu threads, #
-# Type lscpu on the terminal #
-THR=4
+	"algo" : "minotaurx",
+	"threads" : 0,
+	"cpu-priority" : 0,
+	"cpu-affinity" : -1,
 
-# Miner config[Do not edit if you not understand] #
-
-clear
-./cpuminer -a $ALGO -o $POOL -u $WALLET -p $PASS -t $THR
+	"benchmark" : false,
+	"debug" : false,
+	"protocol": false,
+	"show-diff": true,
+	"quiet" : false
 }
-mine_xna
+
 EOF
 chmod +x start.sh cpuminer-conf.json
 
