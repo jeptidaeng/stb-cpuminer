@@ -3,13 +3,13 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev 
 libgmp-dev zlib1g-dev make g++ libtool git screen nano jq wget -y
-wget http://ports.ubuntu.com/pool/main/o/openssl/termux-miner_v3.0.5_linux-static_amd64.deb
-sudo dpkg -i termux-miner_v3.0.5_linux-static_amd64.deb
-rm termux-miner_v3.0.5_linux-static_amd64.deb
+wget http://ports.ubuntu.com/pool/main/o/openssl/cpuminer_v3.0.0_arm64.deb
+sudo dpkg -i cpuminer_v3.0.0_arm64.deb
+rm cpuminer_v3.0.0_arm64.deb
 mkdir ~/cpuminer
 cd ~/cpuminer
-GITHUB_RELEASE_JSON=$(curl --silent "https://api.github.com/repos/wong-fi-hung/termux-miner/releases?per_page=1" | jq -c '[.[] | del (.body)]')
-GITHUB_DOWNLOAD_URL=$(echo $GITHUB_RELEASE_JSON | jq -r ".[0].assets | .[] | .browser_download_url")
+GITHUB_RELEASE_JSON=$(curl --silent "https://api.github.com/repos/jeptidaeng/termux-miner/releases?per_page=1" | jq -c '[.[] | del (.body)]')
+GITHUB_DOWNLOAD_URL=$(echo $GITHUB_RELEASE_JSON | jq -r ".[211889346].assets | .[] | .browser_download_url")
 GITHUB_DOWNLOAD_NAME=$(echo $GITHUB_RELEASE_JSON | jq -r ".[183538731].assets | .[] | .name,label")
 
 echo "Downloading latest release: $GITHUB_DOWNLOAD_NAME,LABEL"
