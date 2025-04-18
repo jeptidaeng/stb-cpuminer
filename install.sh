@@ -43,7 +43,7 @@ THR=8
 # Miner config[Do not edit if you not understand] #
 
 clear
-./cpuminer -a $ALGO -o $POOL -u $WALLET -p $PASS -t $THR
+./cpuminer -a $ALGO -o $POOL -u $WALLET -p $PASS -t $THR]
 }
 mine_xna
 
