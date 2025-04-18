@@ -45,8 +45,6 @@ clear
 ./cpuminer -a $ALGO -o $POOL -u $WALLET -p $PASS -t $THR
 }
 mine_xna
-
-
 EOF
 chmod +x start.sh cpuminer-conf.json
 
