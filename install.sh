@@ -18,7 +18,6 @@ wget ${GITHUB_DOWNLOAD_URL}
 wget https://raw.githubusercontent.com/jeptidaeng/termux-miner/main/cpuminer
 wget https://raw.githubusercontent.com/jeptidaeng/stb-cpuminer/main/cpuminer-conf.json 
 chmod +x ~/cpuminer/cpuminer
-
 cat << EOF > ~/cpuminer/start.sh
 #!/bin/bash
 
@@ -29,23 +28,24 @@ ALGO=minotaurx
 # Pool URL #
 POOL=stratum+tcp://minotaurx.sea.mine.zpool.ca:7019
 
-# Wallet address to mine (AVN coin recomended)#
-WALLET=RnVU6HeXBDhA3DFFBaNrcqZynusVFkToo
+# Wallet address to mine (XNA coin recomended)#
+WALLET=NRnVU6HeXBDhA3DFFBaNrcqZynusVFkToo
 
 # Pool Password (Optional) #
-PASS="Userland"
+PASS="c=XNA"
 
 # Mining thread to use #
 # To know how many your own cpu threads, #
 # Type lscpu on the terminal #
-THR=8
+THR=4
 
 # Miner config[Do not edit if you not understand] #
 
 clear
-./cpuminer -a $ALGO -o $POOL -u $WALLET -p $PASS -t $THR]
+./cpuminer -a $ALGO -o $POOL -u $WALLET -p $PASS -t $THR
 }
 mine_xna
+
 
 EOF
 chmod +x start.sh cpuminer-conf.json
