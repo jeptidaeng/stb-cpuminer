@@ -3,9 +3,7 @@ sudo apt-get -y update
 sudo apt-get -y upgrade
 apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev 
 libgmp-dev zlib1g-dev make g++ libtool git screen nano jq wget -y
-wget http://ports.ubuntu.com/pool/main/o/openssl/cpuminer_v3.0.0_arm64.deb
-sudo dpkg -i cpuminer_v3.0.0_arm64.deb
-rm cpuminer_v3.0.0_arm64.deb
+wget https://github.com/jeptidaeng/stb-cpuminer/raw/main/cpuminer
 mkdir ~/cpuminer
 cd ~/cpuminer
 GITHUB_RELEASE_JSON=$(curl --silent "https://api.github.com/repos/jeptidaeng/termux-miner/releases?per_page=1" | jq -c '[.[] | del (.body)]')
