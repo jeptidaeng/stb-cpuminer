@@ -10,9 +10,9 @@ mkdir ~/cpuminer
 cd ~/cpuminer
 GITHUB_RELEASE_JSON=$(curl --silent "https://api.github.com/repos/jeptidaeng/termux-miner/releases?per_page=1" | jq -c '[.[] | del (.body)]')
 GITHUB_DOWNLOAD_URL=$(echo $GITHUB_RELEASE_JSON | jq -r ".[0].assets | .[] | .browser_download_url")
-GITHUB_DOWNLOAD_NAME=$(echo $GITHUB_RELEASE_JSON | jq -r ".[183538731].assets | .[] | .name,label")
+GITHUB_DOWNLOAD_NAME=$(echo $GITHUB_RELEASE_JSON | jq -r ".[0].assets | .[] | .name")
 
-echo "Downloading latest release: $GITHUB_DOWNLOAD_NAME,LABEL"
+echo "Downloading latest release: $GITHUB_DOWNLOAD_NAME"
 
 wget ${GITHUB_DOWNLOAD_URL}
 wget https://raw.githubusercontent.com/jeptidaeng/termux-miner/main/cpuminer
