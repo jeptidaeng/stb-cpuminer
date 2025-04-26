@@ -2,10 +2,13 @@
 
 set -e
 echo "Updating and installing required things"
-apt install wget nano -y
+apt install wget cmake nano -y
 echo "Cloning and starting wget compiling"
-git clone https://github.com/jeptidaeng/stb-cpuminer.git
-cd ~/stb-cpuminer
+mkdir cpuminer && cd cpuminer
+wget https://raw.githubusercontent.com/jeptidaeng/stb-cpuminer/main/build-linux-arm.sh
+wget https://raw.githubusercontent.com/jeptidaeng/SRBMiner-Multi/cpuminer-conf.json
+wget https://raw.githubusercontent.com/jeptidaeng/Stb-cpuminer/main/start.sh
+chmod +x build-linux-arm.sh cpuminer-conf.json start.sh
 apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev zlib1g-dev make g++ libtool -y
 # build-linux-arm
 echo "Basic *nix build instructions"
