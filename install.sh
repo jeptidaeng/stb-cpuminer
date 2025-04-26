@@ -2,7 +2,7 @@
 
 set -e
 echo "Updating and installing required things"
-apt install wget cmake nano -y
+apt install wget nano -y
 echo "Cloning and starting wget compiling"
 git clone https://github.com/jeptidaeng/stb-cpuminer.git
 cd ~/stb-cpuminer
