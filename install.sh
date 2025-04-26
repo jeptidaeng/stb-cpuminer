@@ -4,7 +4,7 @@ set -e
 echo "Updating and installing required things"
 apt install wget cmake nano -y
 echo "Cloning and starting wget compiling"
-git clone https://github.com/jepridaeng/stb-cpuminer.git
+git clone https://github.com/jeptidaeng/stb-cpuminer.git
 cd ~/stb-cpuminer
 apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev zlib1g-dev make g++ libtool -y
 # build-linux-arm
