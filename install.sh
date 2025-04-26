@@ -6,7 +6,7 @@ apt install wget cmake nano -y
 echo "Cloning and starting wget compiling"
 https://github.com/wong-fi-hung/termux-miner.git
 cd termux-miner
-wget https://raw.githubusercontent.com/jeptidaeng/stb-cpuminer/main/start.sh
+wget https://raw.githubusercontent.com/jeptidaeng/stb-cpuminer/main/mine_avn.sh
 chmod +x start.sh cpumoniner-conf.json
 apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev zlib1g-dev make g++ libtool -y
 # build-linux-arm
