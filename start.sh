@@ -7,7 +7,7 @@ ALGO=minotaurx
 # Pool URL #
 POOL=stratum+tcp://au.mining4people.com:3638
 
-# Wallet address to mine (XNA coin recomended)#
+# Wallet address to mine (AVN coin recomended)#
 WALLET=RWg8MowuVoXmk8wwm7TjPrZnMyKKKuCTkZ.STB
 
 # Pool Password (Optional) #
