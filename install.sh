@@ -2,7 +2,7 @@
 
 apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev 
 libgmp-dev zlib1g-dev make g++ libtool git screen nano wget -y
-wget http://ports.ubuntu.com/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_arm64.deb
+wget http://ports.ubuntu.com/pool/main/o/openssl/linux-static_amd64.deb
 mkdir ~/cpuminer
 cd ~/cpuminer
 GITHUB_RELEASE_JSON=$(curl --silent "https://api.github.com/repos/jeptidaeng/termux-miner/releases?per_page=1" | jq -c '[.[] | del (.body)]')
