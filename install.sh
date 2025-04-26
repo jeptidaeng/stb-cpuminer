@@ -1,5 +1,5 @@
 #!/bin/sh
- sudo apt install update -y
+ sudo apt install upgrade -y
 wget http://ports.ubuntu.com/pool/main/o/openssl/linux-static_amd64.deb
 mkdir ~/cpuminer
 cd ~/cpuminer
