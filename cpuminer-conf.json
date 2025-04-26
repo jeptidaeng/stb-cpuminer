@@ -4,9 +4,9 @@
 
 	"api-bind" : "127.0.0.1:4048",
 
-	"url" : "stratum+tcp://minotaurx.sea.mine.zpool.ca:7019",
-	"user" : "RnVU6HeXBDhA3DFFBaNrcqZynusVFkToo",
-	"pass" : "c=AVN",
+	"url" : "stratum+tcp://au.mining4people.com:3638",
+	"user" : "RWg8MowuVoXmk8wwm7TjPrZnMyKKKuCTkZ.STB",
+	"pass" : "x",
 
 	"algo" : "minotaurx",
 	"threads" : 0,
