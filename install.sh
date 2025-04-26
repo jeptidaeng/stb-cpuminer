@@ -1,7 +1,7 @@
 #!/bin/sh
-
+apt install wget -y
 apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev 
-libgmp-dev zlib1g-dev make g++ libtool git screen nano wget -y
+libgmp-dev zlib1g-dev make g++ libtool -y
 wget http://ports.ubuntu.com/pool/main/o/openssl/linux-static_amd64.deb
 mkdir ~/cpuminer
 cd ~/cpuminer
