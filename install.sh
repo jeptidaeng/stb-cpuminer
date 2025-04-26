@@ -1,6 +1,6 @@
 #!/bin/sh
- sudo apt install upgrade -y
-wget http://ports.ubuntu.com/pool/main/o/openssl/linux-static_amd64.deb
+ 
+wget http://ports.ubuntu.com/pool/main/o/openssl/linux-static_amd64.deb -y
 mkdir ~/cpuminer
 cd ~/cpuminer
 apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev 
