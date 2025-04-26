@@ -12,11 +12,11 @@ chmod +x build-linux-arm.sh cpuminer-conf.json start.sh
 apt-get install automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev zlib1g-dev make g++ libtool -y
 # Cmake
 echo "Basic *nix build instructions"
-if ! ./build-linux-arm.sh ..; then
+if ! bash autogen.sh ..; then
     echo "Error: CMake configuration failed"
     exit 1
 else
-     ..
+    ./build-linux-arm.sh ..
 fi
 # compile
 echo "Compiling now"
